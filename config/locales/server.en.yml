@@ -15,8 +15,8 @@
 # http://yamllint.com/
 
 en:
-  topics_in_category: "Topics in the '%{category}' category"
-  rss_topics_in_category: "RSS feed of topics in the '%{category}' category"
+  topics_in_category: "Topics in the '%{category}' lab"
+  rss_topics_in_category: "RSS feed of topics in the '%{category}' lab"
 
   education:
     'new-topic': |
@@ -26,7 +26,7 @@ en:
 
       - What is this about? Who would be interested in it? Why does it matter? What kind of responses are you hoping for from the community?
 
-      - Include good search words in your topic so others can *find* it. To group your topic with related topics, select a category.
+      - Include good search words in your topic so others can *find* it. To group your topic with related topics, select a lab.
 
       For more, [see our community guidelines](/guidelines). This panel will only appear for your first %{education_posts_text}.
 
@@ -36,10 +36,10 @@ en:
         name: "Lab Name"
 
   vip_category_name: "Lounge"
-  vip_category_description: "A category exclusive to members with trust level 3 and higher."
+  vip_category_description: "A lab exclusive to members with trust level 3 and higher."
 
   staff_category_name: "Staff"
-  staff_category_description: "Private category for staff discussions. Topics are only visible to admins and moderators."
+  staff_category_description: "Private lab for staff discussions. Topics are only visible to admins and moderators."
 
   lounge_welcome:
     title: "Welcome to the Lounge"
@@ -52,9 +52,9 @@ en:
       You can now &hellip;
 
       * Edit the title of any topic
-      * Change the category of any topic
+      * Change the lab of any topic
       * Have all your links followed ([automatic nofollow](http://en.wikipedia.org/wiki/Nofollow) is removed)
-      * Access a private Lounge category only visible to users at trust level 3 and higher
+      * Access a private Lounge lab only visible to users at trust level 3 and higher
       * Hide spam with a single flag
 
       Here's the [current list of fellow regulars](/badges/3/regular). Be sure to say hi.
@@ -66,49 +66,49 @@ en:
       [trust]: https://meta.discourse.org/t/what-do-user-trust-levels-do/4924
 
   category:
-    topic_prefix: "About the %{category} category"
-    replace_paragraph: "[Replace this first paragraph with a short description of your new category. This guidance will appear in the category selection area, so try to keep it below 200 characters. Until you edit this text or create topics, this category won't appear on the categories page.]"
-    post_template: "%{replace_paragraph}\n\nUse the following paragraphs for a longer description, as well as to establish any category guidelines or rules.\n\nSome things to consider in any discussion replies below:\n\n- What is this category for? Why should people select this category for their topic?\n\n- How is this different than the other categories we already have?\n\n- Do we need this category?\n\n- Should we merge this with another category, or split it into more categories?\n"
+    topic_prefix: "About the %{category} lab"
+    replace_paragraph: "[Replace this first paragraph with a short description of your new lab. This guidance will appear in the lab selection area, so try to keep it below 200 characters. Until you edit this text or create topics, this lab won't appear on the labs page.]"
+    post_template: "%{replace_paragraph}\n\nUse the following paragraphs for a longer description, as well as to establish any lab guidelines or rules.\n\nSome things to consider in any discussion replies below:\n\n- What is this lab for? Why should people select this lab for their topic?\n\n- How is this different than the other labs we already have?\n\n- Do we need this lab?\n\n- Should we merge this with another lab, or split it into more labs?\n"
     errors:
-      uncategorized_parent: "Uncategorized can't have a parent category"
-      self_parent: "A subcategory's parent cannot be itself"
-      depth: "You can't nest a subcategory under another"
+      uncategorized_parent: "Unspecified can't have a parent lab"
+      self_parent: "A sub-lab's parent cannot be itself"
+      depth: "You can't nest a sub-lab under another"
     cannot_delete:
-      uncategorized: "Can't delete Uncategorized"
-      has_subcategories: "Can't delete this category because it has sub-categories."
+      uncategorized: "Can't delete Unspecified"
+      has_subcategories: "Can't delete this lab because it has sub-labs."
       topic_exists:
-        one: "Can't delete this category because is has 1 topic. Oldest topic is %{topic_link}."
-        other: "Can't delete this category because it has %{count} topics. Oldest topic is %{topic_link}."
-      topic_exists_no_oldest: "Can't delete this category because topic count is %{count}."
+        one: "Can't delete this lab because is has 1 topic. Oldest topic is %{topic_link}."
+        other: "Can't delete this lab because it has %{count} topics. Oldest topic is %{topic_link}."
+      topic_exists_no_oldest: "Can't delete this lab because topic count is %{count}."
 
   site_settings:
-    allow_uncategorized_topics: "Allow topics to be created without a category."
-    uncategorized_description: "The description of the uncategorized category. Leave blank for no description."
-    category_featured_topics: "Number of topics displayed per category on the /categories page. After changing this value, it takes up to 15 minutes for the categories page to update."
-    show_subcategory_list: "Show subcategory list instead of topic list when entering a category."
-    fixed_category_positions: "If checked, you will be able to arrange categories into a fixed order. If unchecked, categories are listed in order of activity."
+    allow_uncategorized_topics: "Allow topics to be created without a lab."
+    uncategorized_description: "The description of the Unspecified lab. Leave blank for no description."
+    category_featured_topics: "Number of topics displayed per lab on the /categories page. After changing this value, it takes up to 15 minutes for the labs page to update."
+    show_subcategory_list: "Show sub-lab list instead of topic list when entering a lab."
+    fixed_category_positions: "If checked, you will be able to arrange labs into a fixed order. If unchecked, labs are listed in order of activity."
 
-    allow_moderators_to_create_categories: "Allow moderators to create new categories"
+    allow_moderators_to_create_categories: "Allow moderators to create new labs"
     top_menu: "Determine which items appear in the homepage navigation, and in what order. Example latest|new|unread|starred|categories|top|read|posted"
 
-    limit_suggested_to_category: "Only show topics from the current category in suggested topics."
+    limit_suggested_to_category: "Only show topics from the current lab in suggested topics."
 
-    category_colors: "A list of hexadecimal color values allowed for categories."
+    category_colors: "A list of hexadecimal color values allowed for labs."
 
-    email_in: "Allow users to post new topics via email (requires pop3 polling). Configure the addresses in the \"Settings\" tab of each category."
+    email_in: "Allow users to post new topics via email (requires pop3 polling). Configure the addresses in the \"Settings\" tab of each lab."
 
-    suppress_uncategorized_badge: "Don't show the badge for uncategorized topics in topic lists."
+    suppress_uncategorized_badge: "Don't show the badge for Unspecified topics in topic lists."
 
-    embed_category: "Category of embedded topics."
+    embed_category: "Lab of embedded topics."
 
   search:
-      category: 'Categories'
+      category: 'Labs'
 
   topic_statuses:
-    pinned_enabled: "This topic is now pinned. It will appear at the top of its category until it is unpinned by staff for everyone, or by individual users for themselves."
-    pinned_disabled: "This topic is now unpinned. It will no longer appear at the top of its category."
-    pinned_globally_enabled: "This topic is now pinned globally. It will appear at the top of its category and all topic lists until it is unpinned by staff for everyone, or by individual users for themselves."
-    pinned_globally_disabled: "This topic is now unpinned. It will no longer appear at the top of its category."
+    pinned_enabled: "This topic is now pinned. It will appear at the top of its lab until it is unpinned by staff for everyone, or by individual users for themselves."
+    pinned_disabled: "This topic is now unpinned. It will no longer appear at the top of its lab."
+    pinned_globally_enabled: "This topic is now pinned globally. It will appear at the top of its lab and all topic lists until it is unpinned by staff for everyone, or by individual users for themselves."
+    pinned_globally_disabled: "This topic is now unpinned. It will no longer appear at the top of its lab."
 
   system_messages:
     usage_tips:
@@ -175,7 +175,7 @@ en:
 
         <img src="/images/welcome/topics-new-unread.png" width="368" height="89">
 
-        You can change the individual notification state of a topic via the control at the bottom of the topic (this can also be set per category). To change how you track topics, or the definition of new, see [your user preferences](/my/preferences).
+        You can change the individual notification state of a topic via the control at the bottom of the topic (this can also be set per lab). To change how you track topics, or the definition of new, see [your user preferences](/my/preferences).
 
         ## Why can't I do certain things?
 
@@ -256,7 +256,7 @@ en:
 
       Make the effort to put things in the right place, so that we can spend more time discussing and less cleaning up. So:
 
-      *   Don’t start a topic in the wrong category.
+      *   Don’t start a topic in the wrong lab.
       *   Don’t cross-post the same thing in multiple topics.
       *   Don’t post no-content replies.
       *   Don’t divert a topic by changing it midstream.
@@ -283,7 +283,7 @@ en:
       <ul>
         <li>Title matches are prioritized, so when in doubt, search for titles</li>
         <li>Unique, uncommon words will always produce the best results</li>
-        <li>Whenever possible, scope your search to a particular category, user, or topic</li>
+        <li>Whenever possible, scope your search to a particular category (lab), user, or topic</li>
       </ul>
       </p>
       <h2>Options</h2>
@@ -296,5 +296,5 @@ en:
         </table>
       </p>
       <p>
-        <code>rainbows category:parks status:open order:latest</code> will search for topics containing the word "rainbows" in the category "parks" that are not closed or archived, ordered by date of last post.
+        <code>pubkey category:bitcoin status:open order:latest</code> will search for topics containing the word "pubkey" in the lab "bitcoin" that are not closed or archived, ordered by date of last post.
       </p>

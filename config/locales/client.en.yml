@@ -10,7 +10,7 @@ en:
       all_subcategories: "all"
       no_subcategory: "none"
       category: "Lab"
-      subcategories: "Subcategories"
+      subcategories: "Sub-labs"
 
     user:
       mailing_list_mode: "Receive an email for every new post (unless you mute the topic or lab)"
@@ -89,7 +89,7 @@ en:
 
 # This section is exported to the javascript for i18n in the admin section
   admin_js:
-    
+
     keyboard_shortcuts_help:
       jump_to:
         categories: '<b>g</b>, <b>c</b> Labs'
